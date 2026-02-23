@@ -58,6 +58,31 @@ html, body {
   overflow: hidden;
 }
 
+.submenu {
+  transition: max-height 0.3s ease;
+}
+
+.nav-group.active .submenu {
+  max-height: 500px; /* aumenta no mobile */
+}
+
+/* GARANTE QUE SIDEBAR FIQUE ACIMA DO IFRAME */
+.sidebar {
+  z-index: 1000;
+}
+
+/* Overlay deve ficar abaixo da sidebar */
+.sidebar-overlay {
+  z-index: 900;
+}
+
+/* iframe precisa ficar abaixo */
+.iframe-wrapper,
+#reportFrame {
+  position: relative;
+  z-index: 1;
+}
+
 /* subtle grid texture */
 .sidebar::before {
   content: '';
@@ -630,6 +655,13 @@ html, body {
   border: none;
 }
 
+.brand-logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(79,195,247,.3));
+}
+
 /* =========================================
    RESPONSIVE
    ========================================= */
@@ -675,8 +707,7 @@ html, body {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(9,30,62,.5);
+  background: rgba(9,30,62,.45);
   z-index: 99;
-  backdrop-filter: blur(2px);
 }
 .sidebar-overlay.visible { display: block; }
