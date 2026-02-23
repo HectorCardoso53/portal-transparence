@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-brand">
@@ -37,11 +36,7 @@
       <!-- SEGURANÇA PÚBLICA -->
       <div class="nav-group" id="segurancaGroup">
         <button class="nav-item" onclick="toggleSubmenu('segurancaGroup')">
-          <span class="nav-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
-          </span>
+          <span class="nav-icon">🛡️</span>
           <span class="nav-label">Segurança Pública</span>
           <span class="nav-arrow">▼</span>
         </button>
@@ -55,53 +50,107 @@
         </div>
       </div>
 
-      <!-- SAÚDE -->
-      <button class="nav-item" data-key="saude" onclick="loadDashboard('saude')">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-          </svg>
-        </span>
+      <button class="nav-item disabled">
+        <span class="nav-icon">🏥</span>
         <span class="nav-label">Saúde</span>
-        <span class="nav-arrow">›</span>
+        <span class="nav-badge">Em breve</span>
       </button>
 
-      <!-- EDUCAÇÃO -->
-      <button class="nav-item" data-key="educacao" onclick="loadDashboard('educacao')">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-          </svg>
-        </span>
+      <button class="nav-item disabled">
+        <span class="nav-icon">📚</span>
         <span class="nav-label">Educação</span>
-        <span class="nav-arrow">›</span>
+        <span class="nav-badge">Em breve</span>
       </button>
 
-      <!-- INFRAESTRUTURA -->
-      <button class="nav-item" data-key="infraestrutura" onclick="loadDashboard('infraestrutura')">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="2" y="7" width="20" height="14" rx="2" />
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-          </svg>
-        </span>
-        <span class="nav-label">Infraestrutura</span>
-        <span class="nav-arrow">›</span>
+      <button class="nav-item disabled">
+        <span class="nav-icon">🌿</span>
+        <span class="nav-label">Meio Ambiente</span>
+        <span class="nav-badge">Em breve</span>
       </button>
 
-      <!-- ASSISTÊNCIA SOCIAL -->
-      <button class="nav-item" data-key="assistencia" onclick="loadDashboard('assistencia')">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-          </svg>
-        </span>
+      <button class="nav-item disabled">
+        <span class="nav-icon">💰</span>
+        <span class="nav-label">Finanças</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">🤝</span>
+        <span class="nav-label">Integração</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Agricultura</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">❤️</span>
         <span class="nav-label">Assistência Social</span>
-        <span class="nav-arrow">›</span>
+        <span class="nav-badge">Em breve</span>
       </button>
 
+      <button class="nav-item disabled">
+        <span class="nav-icon">🎭</span>
+        <span class="nav-label">Cultura</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">🏗️</span>
+        <span class="nav-label">Infraestrutura</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">Planejamento</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">⚽</span>
+        <span class="nav-label">Esporte</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">🚧</span>
+        <span class="nav-label">Obras Públicas</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">🎓</span>
+        <span class="nav-label">Juventude</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">Eficiência Governamental</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">📢</span>
+        <span class="nav-label">Comunicação</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">✊</span>
+        <span class="nav-label">Igualdade Racial</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
+
+      <button class="nav-item disabled">
+        <span class="nav-icon">✊</span>
+        <span class="nav-label">Turismo</span>
+        <span class="nav-badge">Em breve</span>
+      </button>
     </nav>
 
     <div class="sidebar-footer">
@@ -136,42 +185,38 @@
     <div class="dashboard-area">
       <!-- Welcome Screen -->
       <div class="welcome-screen" id="welcomeScreen">
-        <div class="welcome-content">
-          <div class="welcome-icon">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="40" cy="40" r="38" stroke="#1a4b8c" stroke-width="2" opacity="0.3" />
-              <circle cx="40" cy="40" r="28" stroke="#1a4b8c" stroke-width="1.5" opacity="0.2" />
-              <circle cx="40" cy="40" r="8" fill="#1a4b8c" opacity="0.8" />
-              <line x1="40" y1="12" x2="40" y2="24" stroke="#1a4b8c" stroke-width="2" opacity="0.5" />
-              <line x1="40" y1="56" x2="40" y2="68" stroke="#1a4b8c" stroke-width="2" opacity="0.5" />
-              <line x1="12" y1="40" x2="24" y2="40" stroke="#1a4b8c" stroke-width="2" opacity="0.5" />
-              <line x1="56" y1="40" x2="68" y2="40" stroke="#1a4b8c" stroke-width="2" opacity="0.5" />
-            </svg>
+        <div class="welcome-content institucional">
+
+          <div class="prefeitura-logo">
+            <img src="img/prefeitura.png" alt="Logo Prefeitura">
           </div>
-          <h2>Selecione uma Secretaria</h2>
-          <p>Escolha uma secretaria no menu lateral para visualizar o painel de indicadores correspondente.</p>
-          <div class="welcome-cards">
-            <div class="w-card" onclick="loadDashboard('guarda')">
-              <span>🛡️</span>
-              <span>Guarda Municipal</span>
-            </div>
-            <div class="w-card" onclick="loadDashboard('saude')">
-              <span>🏥</span>
-              <span>Saúde</span>
-            </div>
-            <div class="w-card" onclick="loadDashboard('educacao')">
-              <span>📚</span>
-              <span>Educação</span>
-            </div>
-            <div class="w-card" onclick="loadDashboard('infraestrutura')">
-              <span>🏗️</span>
-              <span>Infraestrutura</span>
-            </div>
-            <div class="w-card" onclick="loadDashboard('assistencia')">
-              <span>🤝</span>
-              <span>Assistência Social</span>
-            </div>
+
+          <h1 class="prefeitura-nome">
+            Prefeitura Municipal de Oriximiná
+          </h1>
+
+          <h2 class="sistema-nome">
+            Sistema de Monitoramento Estratégico
+          </h2>
+
+          <div class="linha-divisoria"></div>
+
+          <p class="sistema-descricao">
+            Este sistema tem como finalidade disponibilizar indicadores
+            estratégicos da Secretaria de Segurança Pública,
+            promovendo transparência, gestão eficiente e acompanhamento institucional.
+          </p>
+
+          <p class="instrucao">
+            Para visualizar os painéis, utilize o menu lateral e selecione
+            o órgão desejado dentro da Secretaria de Segurança Pública.
+          </p>
+
+          <!-- SLOGAN -->
+          <div class="slogan">
+            A Transformação não para!
           </div>
+
         </div>
       </div>
 

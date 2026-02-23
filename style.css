@@ -91,6 +91,15 @@ html, body {
   position: relative;
 }
 
+.slogan {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
 .brand-logo svg {
   width: 42px; height: 42px;
   flex-shrink: 0;
@@ -132,6 +141,59 @@ html, body {
   padding: 0 14px;
   flex-grow: 1;          /* ocupa só o espaço disponível */
   overflow-y: auto;      /* scroll interno se precisar */
+}
+
+/* Welcome institucional */
+.welcome-content.institucional {
+  text-align: center;
+  max-width: 650px;
+}
+
+.prefeitura-logo img {
+  width: 110px;
+  margin-bottom: 18px;
+}
+
+.prefeitura-nome {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.sistema-nome {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 14px;
+}
+
+.sistema-descricao {
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Remove animação antiga */
+.welcome-icon {
+  display: none;
+}
+
+.nav-item.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.nav-badge {
+  font-size: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 3px 6px;
+  border-radius: 6px;
+  margin-left: auto;
+  color: rgba(255,255,255,0.6);
 }
 
 .nav-item {
@@ -345,6 +407,61 @@ html, body {
   display: flex;
   flex-direction: column;
   padding: 28px;
+}
+
+/* Welcome institucional limpa */
+.welcome-content.institucional {
+  text-align: center;
+  max-width: 700px;
+}
+
+.prefeitura-logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.prefeitura-nome {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.sistema-nome {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.linha-divisoria {
+  width: 80px;
+  height: 3px;
+  background: var(--accent);
+  margin: 0 auto 25px;
+  border-radius: 3px;
+}
+
+.sistema-descricao {
+  font-size: .95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.instrucao {
+  font-size: .9rem;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+/* Remove qualquer animação antiga */
+.welcome-icon,
+.welcome-cards {
+  display: none;
 }
 
 /* ---- Welcome Screen ---- */
