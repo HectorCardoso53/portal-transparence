@@ -357,7 +357,10 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  transition: margin var(--trans);
+}
+
+.dashboard-area {
+  flex: 1;
 }
 
 /* ---- Topbar ---- */
@@ -711,3 +714,30 @@ html, body {
   z-index: 99;
 }
 .sidebar-overlay.visible { display: block; }
+
+
+/* =========================================
+   FOOTER INSTITUCIONAL
+========================================= */
+
+.main-footer {
+  height: 48px;
+  background: var(--white);
+  border-top: 1px solid var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  font-size: .8rem;
+  color: var(--gray-600);
+  box-shadow: 0 -2px 10px rgba(13,43,85,.05);
+}
+
+.footer-left {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.footer-right {
+  opacity: .7;
+}
